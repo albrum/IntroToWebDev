@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Name: Alexis Brum
+Date Created:2018-09-26
+Most recent revision:
+-->
+
+<html lang="en">
+  <head>
+    <title> Contact Us </title>
+  </head>
+
+  <body>
+      <header>
+        <h1> Debra's Country Kitchen </h1>
+      </header>
+
+      <nav>
+        <hr />
+        <p><a href="index.html"> Home </a></p>
+        <p><a href="menu.html"> Menu </a></p>
+        <p><a href=""> Contact Us </a></p>
+        <hr />
+      </nav>
+
+      <form action="submit.html" method="POST">
+        <label for="name"> Name: </label>
+        <input type="text" id="name" name="name"> <br />
+        <label for="email"> Email: </label>
+        <input type="text" id="email" name="email"><br />
+        <label for="phone"> Phone: </label>
+        <input type="text" id="phone" name="phone"><br />
+
+        <label for="reason"> Reason for Inquiry: </label>
+        <select id="reason" name="reason">
+          <option value="catering" selected> Catering </option>
+          <option value="party"> Private Party </option>
+          <option value="feedback"> Feedback </option>
+          <option value="other"> Other </option>
+        </select>
+        <br />
+
+        <label for="addInfo"> Additional Information: </label>
+        <textarea id="addInfo" name="addInfo"></textarea>
+        <br />
+
+
+        <label for="visit"> Have you been to the restaurant? </label>
+        <input type="radio" id="choice1" name="visit" value="no" checked>
+        <label for="choice1"> No </label>
+        <input type="radio" id="choice2" name="visit" value="yes">
+        <label for="choice2"> Yes </label>
+        <br />
+
+        <label for="contact"> Best days to contact you: </label>
+        <input type="checkbox" id="m" name="contact" value="m">
+        <label for="m"> M </label>
+        <input type="checkbox" id="t" name="contact" value="t">
+        <label for="t"> T </label>
+        <input type="checkbox" id="w" name="contact" value="w">
+        <label for="w"> W </label>
+        <input type="checkbox" id="th" name="contact" value="th">
+        <label for="th"> Th </label>
+        <input type="checkbox" id="f" name="contact" value="f">
+        <label for="f"> F </label>
+        <br/>
+
+        <input type="submit" name="submit" value="Send Request">
+
+      </form>
+
+      <footer>
+        <hr />
+        <p> 1234 Flavor St. Parkersburg, WV 26102</p>
+        <p> (304)-686-6867 </p>
+      </footer>
+
+    </body>
+  </html>

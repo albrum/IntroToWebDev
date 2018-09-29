@@ -2,90 +2,155 @@
 <!--
 Name: Alexis Brum
 Date Created: 2018=09-26
-Most recent revision:
+Most recent revision: 2018-09-29
 -->
 
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title> Menu </title>
+
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+
+      body{
+        background-color: #ffdfcf;
+      }
+
+      h5{
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom:0;
+      }
+
+      h5, p{
+        text-align: center;
+        vertical-align: text-top;
+      }
+
+      table{
+        margin-top: 20px;
+      }
+
+    </style>
   </head>
 
   <body>
-      <header>
+      <header class="jumbotron">
         <h1> Debra's Country Kitchen </h1>
       </header>
 
       <nav>
-        <hr />
-        <p><a href="index.html"> Home </a></p>
-        <p><a href=""> Menu </a></p>
-        <p><a href="contact.html"> Contact Us </a></p>
-        <hr />
+        <a href="index.html"> Home </a>
+        <a href=""> Menu </a>
+        <a href="contact.html"> Contact Us </a>
       </nav>
 
-      <table style="width:90%">
-        <tr>
-          <th> Burger and Fries </th>
-          <th> Hot Dog and Chips </th>
-          <th> Italian Sausage and Peppers </th>
-        </tr>
-        <tr>
-          <td>  An American Classic! <br />
-            Your choice - with or without cheese<br />
-          Pickle, onion, tomato, and lettuce <br />
-          Served with our famous thick cut french fries<br />
-          $7.95
-        </td>
-          <td> A Summer Classic! <br />
-            Your choice - white or wheat bread<br />
-          Relish, mustard, and ketchup<br />
-          Served with our house-made chips<br />
-          $7.95
-          </td>
-          <td> An All-Time Favorite! <br />
-            Your choice - mild or spicy Cole Slaw<br />
-          Served with garlic mashers<br />
-          $10.95</td>
-        </tr>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-4">
+            <h5> Burger and Fries</h5>
+            <p> An American Classic! <br />
+              Your choice - with or without cheese<br />
+            Pickle, onion, tomato, and lettuce <br />
+            Served with our famous thick cut french fries<br />
+            $7.95 </p>
+          </div>
 
-      </table>
-
-      <table style="width:90%">
-        <tr>
-          <th> Tenderloin Sandwich and Chips </th>
-          <th> House Salad </th>
-          <th> Brisket Sandwich and Fries </th>
-        </tr>
-        <tr>
-          <td> Really Hits the Spot!<br />
-            Plain or Sesame Seed Bun<br />
-            Pickle, onion, tomato, and lettuce<br />
+          <div class="col-lg-4 col-sm-4">
+            <h5> Hot Dog and Chips</h5>
+            <p>A Summer Classic! <br />
+              Your choice - white or wheat bread<br />
+            Relish, mustard, and ketchup<br />
             Served with our house-made chips<br />
-            $8.95
-          </td>
-          <td> On the Lighter Side<br />
-            Your choice - with our without cheese<br />
-            Iceberg lettuce, tomatoes,peppers<br />
-            Thousand Island Ranch Dressing<br />
-            Served with a dinner roll<br />
-            $6.95
-          </td>
-          <td> A Taste of Texas!<br />
-            Smoked Brisket on thick-cut<br />
-            Texas Toast<br />
-            Cole Slaw<br />
-            Served with our famous thick-cut french fries<br />
-            $7.95
-          </td>
-        </tr>
-      </table>
+            $7.95</p>
+          </div>
+
+          <div class="col-lg-4 col-sm-4">
+            <h5>Italian Sausage and Peppers</h5>
+            <p>An All-Time Favorite! <br />
+              Your choice - mild or spicy Cole Slaw<br />
+            Served with garlic mashers<br />
+            $10.95</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-4">
+            <h5> Tenderloin Sandwich and Chips</h5>
+            <p>Really Hits the Spot!<br />
+              Plain or Sesame Seed Bun<br />
+              Pickle, onion, tomato, and lettuce<br />
+              Served with our house-made chips<br />
+              $8.95  </p>
+          </div>
+
+          <div class="col-lg-4 col-sm-4">
+            <h5>House Salad </h5>
+            <p>On the Lighter Side<br />
+              Your choice - with our without cheese<br />
+              Iceberg lettuce, tomatoes,peppers<br />
+              Thousand Island Ranch Dressing<br />
+              Served with a dinner roll<br />
+              $6.95</p>
+          </div>
+
+          <div class="col-lg-4 col-sm-4">
+            <h5>Brisket Sandwich and Fries</h5>
+            <p>A Taste of Texas!<br />
+              Smoked Brisket on thick-cut<br />
+              Texas Toast<br />
+              Cole Slaw<br />
+              Served with our famous thick-cut french fries<br />
+              $7.95 </p>
+          </div>
+        </div>
 
 
-      <footer>
-        <hr />
+        <table class="table table-striped col-lg-6 col-sm-6">
+          <tr>
+            <th> Beverages </th>
+            <th> </th>
+          </tr>
+
+          <tr>
+            <td> Root Beer </td>
+            <td> $3.00 </td>
+          </tr>
+
+          <tr>
+            <td> Bottled Water </td>
+            <td> $1.25 </td>
+          </tr>
+
+          <tr>
+            <td> Lemonade </td>
+            <td> $1.00 </td>
+          </tr>
+
+          <tr>
+            <td> Iced Tea </td>
+            <td> $1.25 </td>
+          </tr>
+
+        </table>
+      </div>
+
+
+
+      <footer class="jumbotron">
         <p> 1234 Flavor St. Parkersburg, WV 26102</p>
         <p> (304)-686-6867 </p>
       </footer>
 
+      <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
   </html>

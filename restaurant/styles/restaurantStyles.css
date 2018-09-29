@@ -1,0 +1,47 @@
+/*
+Creator: Alexis Brume
+Date created: 2018-09-28
+Date last modified: 2018-09-29
+*/
+@import url('https://fonts.googleapis.com/css?family=Notable');
+
+.jumbotron, footer{
+  background-color: #af3e4d;
+  color: #efeee8;
+  text-align: center;
+}
+
+header{
+  margin-bottom:0;
+  font-family: 'Notable', sans-serif;
+}
+
+nav{
+  border-top: thin #60222a solid;
+  border-bottom: thin #60222a solid;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom:30px;
+}
+
+nav a{
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+a:visited{
+  color: grey;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+a:active{
+  text-decoration: none;
+}
+
+footer{
+  border-top: thin #60222a solid;
+  margin-top: 30px;
+}

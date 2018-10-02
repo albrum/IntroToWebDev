@@ -9,6 +9,7 @@ Date last modified: 2018-09-29
   background-color: #af3e4d;
   color: #efeee8;
   text-align: center;
+  margin-bottom: 0;
 }
 
 header{
@@ -29,9 +30,18 @@ nav a{
   padding-right: 30px;
 }
 
-a:visited{
-  color: grey;
+nav .btn{
+  background-color: #DA866F;
 }
+
+a:link{
+  color:white;
+}
+
+a:visited{
+  color: lightgrey;
+}
+
 
 a:hover{
   font-weight: bold;
